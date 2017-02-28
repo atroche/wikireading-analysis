@@ -1,0 +1,31 @@
+{
+  "namespace": "sunshine.avro",
+  "type": "record",
+  "name": "Instance",
+  "fields": [
+    {
+      "name": "document",
+      "type": "string"
+    },
+    {
+      "name": "statement",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "statement",
+          "fields": [
+            {
+              "name": "property",
+              "type": "string"
+            },
+            {
+              "name": "value",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
